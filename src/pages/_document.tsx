@@ -11,6 +11,7 @@ class MyDocument extends Document {
     return (
       <Html>
         <Head>
+          <link rel="preconnect" href="http://fonts.cdnfonts.com/css/dax" />
           <link href="http://fonts.cdnfonts.com/css/dax" rel="stylesheet" />
         </Head>
         <body>
