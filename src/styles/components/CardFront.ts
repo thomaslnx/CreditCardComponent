@@ -10,7 +10,7 @@ export const CardFront = {
     borderRadius: 10,
     boxShadow: `0px 0px 0.25em rgba(255,255,255, 0.6)`,
     transformStyle: "preserve-3d",
-    fontFamily: "Dax-Regular",
+    fontFamily: "Spartan, sans-serif",
     letterSpacing: 1.5,
 
     transition: "all 250ms ease-out",
