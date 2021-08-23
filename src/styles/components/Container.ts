@@ -6,6 +6,9 @@ export const Container = {
     maxWidth: "100vw",
     margin: 0,
     padding: 0,
+    display: "flex"
   },
-  sizes: {}
+  sizes: {},
+  variants: {},
+  defaultProps: {},
 }
