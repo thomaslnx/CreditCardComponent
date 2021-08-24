@@ -1,10 +1,12 @@
 import type { NextPage } from 'next'
-import { Box, Text, Container, Image, useStyleConfig } from '@chakra-ui/react'
+import { Box, Text, Container, Image, useStyleConfig, Divider } from '@chakra-ui/react'
+
 
 
 const CreditCard: NextPage = () => {
   const cardFront = useStyleConfig("CardFront")
-  const bankLogo = useStyleConfig("BankImage")
+  const bankLogo = useStyleConfig("BankLogo")
+  const chip = useStyleConfig('Box')
 
   return (
     <Container size="xl" centerContent >
@@ -12,14 +14,23 @@ const CreditCard: NextPage = () => {
         <Box __css={bankLogo}>
           <Image src="/bankImages/nubank.svg" alt="bank-logo"/>
         </Box>      
+
+        <Box __css={chip} >
+          <Divider orientation="horizontal" width="50px" ml="-1px" mt="11px" />
+          <Divider orientation="horizontal" width="50px" ml="-1px" mt="13px" />
+          <Divider orientation="vertical" height="40px" mt="-27px" ml="13px" />
+          <Divider orientation="vertical" height="40px" mt="-40px" ml="30px" />
+        </Box>
+
         <Text 
-          fontSize="13px"  
+          fontSize="11px"  
           color="white"
           fontWeight="bold"
           transform="rotate(270deg)"
           transformOrigin="center"
-          position="relative"
-          marginRight={5}
+          position="absolute"
+          top="130px"
+          left="170px"
         >
           Marcos M Silva
         </Text>

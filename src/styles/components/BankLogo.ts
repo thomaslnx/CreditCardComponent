@@ -1,4 +1,4 @@
-export const BankImage = {
+export const BankLogo = {
   baseStyle:{
     w: 79,
     h: 79,

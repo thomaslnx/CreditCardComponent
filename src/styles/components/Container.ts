@@ -1,6 +1,6 @@
 export const Container = {
   baseStyle: {
-    backgroundColor: "#29144d",
+    backgroundColor: "#0f044c",
     color: "#ffffff",
     h: "100vh",
     maxWidth: "100vw",

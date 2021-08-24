@@ -8,7 +8,7 @@ export const CardFront = {
     minWidth: 350,
     margin: "auto auto",
     borderRadius: 10,
-    boxShadow: `0px 0px 0.25em rgba(255,255,255, 0.6)`,
+    boxShadow: `0px 0px 0.25em rgba(238, 238, 238, 0.4)`,
     transformStyle: "preserve-3d",
     fontFamily: "Spartan, sans-serif",
     letterSpacing: 1.5,
