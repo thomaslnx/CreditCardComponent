@@ -1,12 +1,11 @@
 import type { NextPage } from 'next'
 import { Box, Text, Container, Image, useStyleConfig, Divider } from '@chakra-ui/react'
 
-
-
 const CreditCard: NextPage = () => {
   const cardFront = useStyleConfig("CardFront")
   const bankLogo = useStyleConfig("BankLogo")
   const chip = useStyleConfig('Box')
+  const cardBrand = useStyleConfig("CardBrand")
 
   return (
     <Container size="xl" centerContent >
@@ -34,6 +33,10 @@ const CreditCard: NextPage = () => {
         >
           Marcos M Silva
         </Text>
+
+        <Box __css={cardBrand}>
+          <Image src="/BankImages/mastercard.svg" alt="card brand" />
+        </Box>
       </Box>
     </Container>
   )

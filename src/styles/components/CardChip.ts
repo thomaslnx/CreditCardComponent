@@ -6,7 +6,7 @@ export const CardChip = {
     left: "30px",
     width: "50px",
     height: "40px",
-    border: "1.5px solid #666666",
+    border: "2px solid #666666",
     borderRadius: "8px",
     bgGradient: "linear(to-bl, rgba(250,250,250, 1), rgba(204, 204, 204, 1))"
   },
