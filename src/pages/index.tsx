@@ -4,7 +4,7 @@ import { Box, Text, Container, Image, useStyleConfig, Divider } from '@chakra-ui
 const CreditCard: NextPage = () => {
   const cardFront = useStyleConfig("CardFront")
   const bankLogo = useStyleConfig("BankLogo")
-  const chip = useStyleConfig('Box')
+  const chip = useStyleConfig("CardChip")
   const cardBrand = useStyleConfig("CardBrand")
 
   return (
