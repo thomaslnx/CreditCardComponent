@@ -35,7 +35,7 @@ const CreditCard: NextPage = () => {
         </Text>
 
         <Box __css={cardBrand}>
-          <Image src="/bankImages/mastercard.svg" alt="card brand" />
+          <Image src="bankImages/mastercard.svg" alt="card brand" />
         </Box>
       </Box>
     </Container>
