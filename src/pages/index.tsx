@@ -1,5 +1,5 @@
 import type { NextPage } from 'next'
-import { Box, Text, Container, Image, useStyleConfig, Divider } from '@chakra-ui/react'
+import { Box, Text, Container, Img, useStyleConfig, Divider } from '@chakra-ui/react'
 
 const CreditCard: NextPage = () => {
   const cardFront = useStyleConfig("CardFront")
@@ -11,7 +11,7 @@ const CreditCard: NextPage = () => {
     <Container size="xl" centerContent >
       <Box __css={cardFront} >
         <Box __css={bankLogo}>
-          <Image src="/bankImages/nubank.svg" alt="bank-logo"/>
+          <Img src="/bankImages/nubank.svg" alt="bank-logo"/>
         </Box>      
 
         <Box __css={chip} >
@@ -21,7 +21,7 @@ const CreditCard: NextPage = () => {
           <Divider orientation="vertical" height="40px" mt="-40px" ml="30px" />
         </Box>
 
-        <Text 
+        <Text
           fontSize="11px"  
           color="white"
           fontWeight="bold"
@@ -35,7 +35,7 @@ const CreditCard: NextPage = () => {
         </Text>
 
         <Box __css={cardBrand}>
-          <Image src="bankImages/mastercard.svg" alt="card brand" />
+          <Img src="bankImages/mastercard.svg" alt="card brand" />
         </Box>
       </Box>
     </Container>

@@ -15,7 +15,7 @@ export const CardFront = {
 
     transition: "all 250ms ease-out",
     _hover: {
-      transform: "scale(1.025)"
+      transform: "scale(1.025) rotateY(180deg)",
     }
   },
   sizes: {},
