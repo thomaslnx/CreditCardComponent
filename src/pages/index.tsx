@@ -6,10 +6,11 @@ const CreditCard: NextPage = () => {
   const bankLogo = useStyleConfig("BankLogo")
   const chip = useStyleConfig("CardChip")
   const cardBrand = useStyleConfig("CardBrand")
+  const cardBack = useStyleConfig("CardBack")
 
   return (
     <Container size="xl" centerContent >
-      <Box __css={cardFront} >
+      <Box __css={cardFront} onMouseEnter={() => console.log('mouse sobre a div front')}>
         <Box __css={bankLogo}>
           <Img src="/bankImages/nubank.svg" alt="bank-logo"/>
         </Box>      
@@ -38,7 +39,15 @@ const CreditCard: NextPage = () => {
           <Img src="bankImages/mastercard.svg" alt="card brand" />
         </Box>
       </Box>
+      
+      <Box __css={cardBack}>
+        <Box>
+          <Box height="50px" bgGradient="linear(to-tl, #2d2c2f, #151314, #070107 55%)" borderTopLeftRadius={10} borderTopRightRadius={10}/>
+          <Text>CVV</Text>
+        </Box>
+      </Box>
     </Container>
+
   )
 }
 

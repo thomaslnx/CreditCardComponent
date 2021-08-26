@@ -5,6 +5,7 @@ import { Container } from './components/Container'
 import { BankLogo } from './components/BankLogo'
 import { CardChip } from './components/CardChip'
 import { CardBrand } from './components/CardBrand'
+import { CardBack } from './components/CardBack'
 
 const creditCardTheme = extendTheme({
   components: {
@@ -12,7 +13,8 @@ const creditCardTheme = extendTheme({
     CardFront,
     BankLogo,
     CardChip,
-    CardBrand
+    CardBrand,
+    CardBack
   }
 })
 
