@@ -18,10 +18,7 @@ export const CardFront = {
       // transform: "scale(1.025)",
       transform: "rotateY(180deg)",
       backgroundColor: "transparent",
-      _after: {
-        content: '""',
-        zIndex: -4,
-      }
+      zIndex: 0,
     },
   },
   sizes: {},
