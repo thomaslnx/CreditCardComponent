@@ -52,8 +52,6 @@ const CreditCard: NextPage = () => {
       >
         Flip the Card
       </Button>
-      {console.log('Credit card front: ', isFrontFlipped)}
-      {console.log('Credit card back: ', isBackFlipped)}
     </CreditCardContainer>
 
   )
