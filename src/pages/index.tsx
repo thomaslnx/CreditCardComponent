@@ -1,5 +1,7 @@
 import type { NextPage } from 'next'
-import { Box, Text, Container, Img, useStyleConfig, Divider } from '@chakra-ui/react'
+import { Box, Text, Button, Container, Img, useStyleConfig, Divider } from '@chakra-ui/react'
+
+import { CardContainer } from '@src/components/Container'
 
 const CreditCard: NextPage = () => {
   const cardFront = useStyleConfig("CardFront")
@@ -9,7 +11,7 @@ const CreditCard: NextPage = () => {
   const cardBack = useStyleConfig("CardBack")
 
   return (
-    <Container size="xl" centerContent >
+  <CardContainer size="xl" centerContent >
       <Box __css={cardFront} onMouseEnter={() => console.log('mouse sobre a div front')}>
         <Box __css={bankLogo}>
           <Img src="/bankImages/nubank.svg" alt="bank-logo"/>
@@ -39,14 +41,16 @@ const CreditCard: NextPage = () => {
           <Img src="bankImages/mastercard.svg" alt="card brand" />
         </Box>
       </Box>
-      
+
       <Box __css={cardBack}>
         <Box>
           <Box height="50px" bgGradient="linear(to-tl, #2d2c2f, #151314, #070107 55%)" borderTopLeftRadius={10} borderTopRightRadius={10}/>
           <Text>CVV</Text>
         </Box>
       </Box>
-    </Container>
+
+      <Button pos="absolute" transform="translate(20vw, 48vh)">Flip the Card</Button>
+    </CardContainer>
 
   )
 }
