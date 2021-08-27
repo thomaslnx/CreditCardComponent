@@ -6,7 +6,8 @@ export const Container = {
     maxWidth: "100vw",
     margin: 0,
     padding: 0,
-    display: "flex"
+    display: "flex",
+    perspective: "1000px"
   },
   sizes: {},
   variants: {},
