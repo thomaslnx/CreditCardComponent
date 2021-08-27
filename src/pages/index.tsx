@@ -10,19 +10,22 @@ import { CardBrandContainer } from '@src/components/CardBrandContainer'
 import { CardBackContainer } from '@src/components/CardBackContainer'
 
 const CreditCard: NextPage = () => {
-  const [isFlipped, setIsFlipped] = useState('notFlipped')
+  const [isFrontFlipped, setIsFrontFlipped] = useState('notFlipped')
+  const [isBackFlipped, setIsBackFlipped] = useState('notFlipped')
 
   function handleFlip() {
-    if (isFlipped === 'notFlipped') {
-      setIsFlipped('flipped')
+    if (isFrontFlipped === 'notFlipped') {
+      setIsFrontFlipped('flipped')
+      setIsBackFlipped('flipped')
     } else {
-      setIsFlipped('notFlipped')
+      setIsFrontFlipped('notFlipped')
+      setIsBackFlipped('notFlipped')
     }
   }
 
   return (
     <CreditCardContainer size="xl" centerContent >
-      <CardFrontContainer variant={isFlipped}>
+      <CardFrontContainer variant={isFrontFlipped}>
         <BankLogoContainer />
         <CardChipContainer />
         <Text
@@ -40,7 +43,7 @@ const CreditCard: NextPage = () => {
         <CardBrandContainer />
       </CardFrontContainer>
 
-      <CardBackContainer />
+      <CardBackContainer variant={isBackFlipped}/>
 
       <Button 
         pos="absolute"
@@ -49,7 +52,8 @@ const CreditCard: NextPage = () => {
       >
         Flip the Card
       </Button>
-      {console.log(isFlipped)}
+      {console.log('Credit card front: ', isFrontFlipped)}
+      {console.log('Credit card back: ', isBackFlipped)}
     </CreditCardContainer>
 
   )

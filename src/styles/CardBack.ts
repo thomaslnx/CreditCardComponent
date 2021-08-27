@@ -19,14 +19,18 @@ export const CardBack = {
     letterSpacing: 1.5,
 
     transition: "all 1000ms ease-out",
-    _hover: {
-      transform: "translate(-50%, -50%)",
-      // transform: "rotateY(-180deg)",
-      // transition: "transform 5000 ease-out",
-      zIndex: 1
-    },
   },
   sizes: {},
-  variants: {},
+  variants: {
+    "flipped": {
+      transition: "all 1000ms ease-out",
+      transform: "translate(-50%, -50%)",
+      zIndex: 1,
+    },
+    "notFlipped": {
+      transition: "all 1000ms ease-out",
+      zIndex: 0,
+    }
+  },
   defaultProps: {},
 }

@@ -3,7 +3,6 @@ import { Box, ContainerProps, useStyleConfig } from '@chakra-ui/react'
 interface CardFrontProps extends ContainerProps {
   children: JSX.Element | JSX.Element[];
   variant: string;
-  // variant: 'flipped' | 'notFlipped';
 }
 
 export function CardFrontContainer(props: CardFrontProps) {
