@@ -1,6 +1,6 @@
 export const CardFront = {
   baseStyle: {
-    backfaceVisibility: "hidden",
+    // backfaceVisibility: "hidden",
     backgroundColor: "#993399",
     fontSize: 34,
     width: 350,
@@ -14,11 +14,11 @@ export const CardFront = {
     fontFamily: "Spartan, sans-serif",
     letterSpacing: 1.5,
 
-    transition: "all 2000ms ease-out",
+    transition: "all 1000ms ease-out",
     _hover: {
       // transform: "scale(1.025)",
       transform: "rotateY(-180deg)",
-      // zIndex: 0,
+      zIndex: 0,
     },
   },
   sizes: {},

@@ -1,6 +1,6 @@
 export const CardBack = {
   baseStyle: {
-    backfaceVisibility: "hidden",
+    // backfaceVisibility: "hidden",
     position: "absolute",
     bgGradient: "linear(to-tl, #714FA5 1%, #271743, #120621)",
     color: "#261342",
@@ -18,11 +18,11 @@ export const CardBack = {
     fontFamily: "Spartan, sans-serif",
     letterSpacing: 1.5,
 
-    transition: "all 5000ms ease-out",
+    transition: "all 1000ms ease-out",
     _hover: {
-      // transform: "scale(1.025)",
-      transform: "translate(-50%, -50%) rotateY(-180deg)",
-      transition: "transform 5000 ease-out",
+      transform: "translate(-50%, -50%)",
+      // transform: "rotateY(-180deg)",
+      // transition: "transform 5000 ease-out",
       zIndex: 1
     },
   },
