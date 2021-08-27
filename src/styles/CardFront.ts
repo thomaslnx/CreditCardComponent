@@ -15,13 +15,18 @@ export const CardFront = {
     letterSpacing: 1.5,
 
     transition: "all 1000ms ease-out",
-    _hover: {
-      // transform: "scale(1.025)",
+  },
+  sizes: {},
+  variants: {
+    "flipped": {
+      transition: "all 1000ms ease-out",
       transform: "rotateY(-180deg)",
       zIndex: 0,
     },
+    "notFlipped": {
+      transition: "all 1000ms ease-out",
+      // transform: "rotateY(-180deg)",
+      zIndex: 1,
+    }
   },
-  sizes: {},
-  variants: {},
-  defaultProps: {},
 }

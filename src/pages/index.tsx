@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import type { NextPage } from 'next'
 import { Text, Button } from '@chakra-ui/react'
 
@@ -9,9 +10,19 @@ import { CardBrandContainer } from '@src/components/CardBrandContainer'
 import { CardBackContainer } from '@src/components/CardBackContainer'
 
 const CreditCard: NextPage = () => {
+  const [isFlipped, setIsFlipped] = useState('notFlipped')
+
+  function handleFlip() {
+    if (isFlipped === 'notFlipped') {
+      setIsFlipped('flipped')
+    } else {
+      setIsFlipped('notFlipped')
+    }
+  }
+
   return (
     <CreditCardContainer size="xl" centerContent >
-      <CardFrontContainer>
+      <CardFrontContainer variant={isFlipped}>
         <BankLogoContainer />
         <CardChipContainer />
         <Text
@@ -31,7 +42,14 @@ const CreditCard: NextPage = () => {
 
       <CardBackContainer />
 
-      <Button pos="absolute" transform="translate(20vw, 48vh)">Flip the Card</Button>
+      <Button 
+        pos="absolute"
+        onClick={handleFlip}
+        transform="translate(20vw, 48vh)"
+      >
+        Flip the Card
+      </Button>
+      {console.log(isFlipped)}
     </CreditCardContainer>
 
   )
