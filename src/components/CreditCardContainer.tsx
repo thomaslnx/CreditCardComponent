@@ -6,7 +6,7 @@ interface CardContainerProps extends ContainerProps {
   centerContent?: boolean;
 }
 
-export function CardContainer(props: CardContainerProps) {
+export function CreditCardContainer(props: CardContainerProps) {
   const {children, ...rest} = props
   const container = useStyleConfig("Container")
 

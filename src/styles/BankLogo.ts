@@ -1,5 +1,5 @@
 export const BankLogo = {
-  baseStyle:{
+  baseStyle: {
     backfaceVisibility: "hidden",
     w: 79,
     h: 79,
