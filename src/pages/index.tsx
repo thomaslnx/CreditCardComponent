@@ -23,6 +23,11 @@ const CreditCard: NextPage = () => {
     }
   }
 
+  // {
+  //   console.log('Front flip: ', isFrontFlipped)
+  //   console.log('Back flip: ', isBackFlipped)
+  // }
+
   return (
     <CreditCardContainer size="xl" centerContent >
       <CardFrontContainer variant={isFrontFlipped}>
@@ -44,7 +49,6 @@ const CreditCard: NextPage = () => {
       </CardFrontContainer>
 
       <CardBackContainer variant={isBackFlipped}/>
-
       <Button 
         pos="absolute"
         onClick={handleFlip}

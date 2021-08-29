@@ -10,7 +10,7 @@ export function CardBackContainer(props: CardBackContainerProps) {
   const cardBack = useStyleConfig("CardBack", { variant })
 
   return (
-    <Box __css={cardBack} variant>
+    <Box __css={cardBack} variant={variant}>
       <Box>
         <Box height="50px" bgGradient="linear(to-tl, #2d2c2f, #151314, #070107 55%)" borderTopLeftRadius={10} borderTopRightRadius={10}/>
         <Text>CVV</Text>
