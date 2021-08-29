@@ -1,10 +1,10 @@
 export const CardFront = {
   baseStyle: {
-    // backfaceVisibility: "hidden",
     backgroundColor: "#993399",
     fontSize: 34,
     width: 350,
     height: 222,
+    minHeight: 222,
     minWidth: 350,
     zIndex: 1,
     transformStyle: "preserve-3d",
@@ -25,7 +25,6 @@ export const CardFront = {
     },
     "notFlipped": {
       transition: "all 1000ms ease-out",
-      // transform: "rotateY(-180deg)",
       zIndex: 1,
     }
   },
