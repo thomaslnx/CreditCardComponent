@@ -1,7 +1,7 @@
 import type { AppProps, NextWebVitalsMetric } from 'next/app'
 import { ChakraProvider, CSSReset } from '@chakra-ui/react'
 import { ReactElement } from 'react'
-import { DefaultSeo } from 'next-seo'
+import { NextSeo } from 'next-seo'
 
 import creditCardTheme from '../styles'
 
@@ -10,7 +10,7 @@ function MyApp({ Component, pageProps }: AppProps): ReactElement {
   return (
     <ChakraProvider theme={creditCardTheme}>
       <CSSReset />
-      <DefaultSeo
+      <NextSeo
         openGraph={{
           title: 'Animated Credit Card Component',
           description: 'PoC from app using NextJS and ChakraUI',
