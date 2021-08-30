@@ -1,4 +1,4 @@
-import type { AppProps } from 'next/app'
+import type { AppProps, NextWebVitalsMetric } from 'next/app'
 import { ChakraProvider, CSSReset } from '@chakra-ui/react'
 import { ReactElement } from 'react'
 
@@ -13,4 +13,9 @@ function MyApp({ Component, pageProps }: AppProps): ReactElement {
    </ChakraProvider>
   )
 }
+
+export function reportWebVitals(metric: NextWebVitalsMetric) {
+  console.log(metric)
+}
+
 export default MyApp
