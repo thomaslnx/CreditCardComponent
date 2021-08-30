@@ -29,7 +29,7 @@ export function CardBackContainer(props: CardBackContainerProps) {
           marginLeft="10px"
         >
           <Text 
-            fontFamily="Cardium A" 
+            fontFamily="Cardium A, sans-serif" 
             letterSpacing="-0.30px" 
             marginLeft="5px"
             fontSize="14px"
@@ -55,7 +55,7 @@ export function CardBackContainer(props: CardBackContainerProps) {
         <HStack marginTop="10px" marginLeft="15px">
         <Box 
           color="#ffffff"
-          fontFamily="Cardium A"
+          fontFamily="Cardium A, sans-serif"
           display="flex"
           width="62px"
         >
@@ -67,7 +67,7 @@ export function CardBackContainer(props: CardBackContainerProps) {
         </Box>
         <Box 
           color="#ffffff"
-          fontFamily="Cardium A"
+          fontFamily="Cardium A, sans-serif"
           display="flex"
           width="60px"
         >
@@ -79,7 +79,7 @@ export function CardBackContainer(props: CardBackContainerProps) {
         </Box>
         <Box 
           color="#ffffff"
-          fontFamily="Cardium A"
+          fontFamily="Cardium A, sans-serif"
           display="flex"
           width="50px"
         >
@@ -101,7 +101,7 @@ export function CardBackContainer(props: CardBackContainerProps) {
           alignItems="center"
         >
           <Img src="bankImages/cirrus.png"/>
-          <Text color="#ffffff" fontSize="10px" fontFamily="Cardium A" letterSpacing="-0.01px">
+          <Text color="#ffffff" fontSize="10px" fontFamily="Cardium A, sans-serif" letterSpacing="-0.01px">
             cirrus
           </Text>
         </Box>
