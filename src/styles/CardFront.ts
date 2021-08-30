@@ -11,7 +11,7 @@ export const CardFront = {
     margin: "auto auto",
     borderRadius: 10,
     boxShadow: `0px 0px 0.25em rgba(238, 238, 238, 0.1)`,
-    fontFamily: "Spartan, sans-serif",
+    fontFamily: "Cardium A, sans-serif",
     letterSpacing: 1.5,
 
     transition: "all 1000ms ease-out",
