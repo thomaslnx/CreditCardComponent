@@ -13,8 +13,8 @@ class MyDocument extends Document {
         <Head>
           <link rel="preconnect" href="https://fonts.googleapis.com" />
           <link rel="preconnect" href="https://fonts.gstatic.com" />
-          <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;600;700&display=swap" rel="stylesheet" />
-          <link href="http://fonts.cdnfonts.com/css/cardium-a" rel="stylesheet" />
+          <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;600;700&display=swap" />
+          <link rel="stylesheet" href="https://fonts.cdnfonts.com/css/cardium-a" />
         </Head>
         <body>
           <Main />
