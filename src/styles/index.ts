@@ -15,7 +15,7 @@ const creditCardTheme = extendTheme({
     CardChip,
     CardBrand,
     CardBack
-  }
+  },
 })
 
 export default creditCardTheme;

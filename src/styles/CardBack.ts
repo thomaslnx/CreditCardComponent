@@ -2,7 +2,8 @@ export const CardBack = {
   baseStyle: {
     // backfaceVisibility: "hidden",
     position: "absolute",
-    bgGradient: "linear(to-tl, #714FA5 1%, #271743, #120621)",
+    backgroundColor: "#993399",
+    // bgGradient: "linear(to-tl, #714FA5 1%, #271743, #120621)",
     color: "#261342",
     fontSize: 34,
     width: "350px",

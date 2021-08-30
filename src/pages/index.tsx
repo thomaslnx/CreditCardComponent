@@ -31,6 +31,7 @@ const CreditCard: NextPage = () => {
         <CardChipContainer />
         <NFCLogoContainer />
         <Text
+          fontFamily="Cardium A"
           fontSize="11px"  
           color="white"
           fontWeight="bold"
