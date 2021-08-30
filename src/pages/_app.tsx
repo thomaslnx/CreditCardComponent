@@ -13,13 +13,14 @@ function MyApp({ Component, pageProps }: AppProps): ReactElement {
       <NextSeo
         title="Animated Credit Card Component"
         description="PoC from app using NextJS and ChakraUI"
-        canonical="https://www.canonical.ie/"
+        canonical="https://creditcardcomponent.netlify.app/"
+        // canonical="https://creditcardcomponent.vercel.app/"
         openGraph={{
           title: 'Animated Credit Card Component',
           description: 'PoC from app using NextJS and ChakraUI',
           type: 'website',
           locale: 'en_IE',
-          url: 'https://creditcardcomponent.vercel.app/',
+          url: 'https://creditcardcomponent.netlify.app/',
           site_name: 'credit card component',
           images: [{
             url: '/bankImages/nubank.svg',

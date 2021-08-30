@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://creditcardcomponent.netlify.app/sitemap.xml

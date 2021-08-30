@@ -1,5 +1,6 @@
 /** @type {import('next').NextConfig} */
 module.exports = {
   reactStrictMode: true,
-  crossOrigin: 'anonymous'
+  crossOrigin: 'anonymous',
+  productionBrowserSourceMaps: true,
 }
