@@ -11,6 +11,7 @@ class MyDocument extends Document {
     return (
       <Html>
         <Head>
+          <meta name="viewport" content="initial-scale=1.0, width=device-width" />
           <meta name="google-site-verification" content="B8D5ApB32yGPbtbxP6utFKDXPh-pTHR5qpaVfz0a1QA" />
           <link rel="preconnect" href="https://fonts.googleapis.com" />
           <link rel="preconnect" href="https://fonts.gstatic.com" />

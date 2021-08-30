@@ -11,6 +11,9 @@ function MyApp({ Component, pageProps }: AppProps): ReactElement {
     <ChakraProvider theme={creditCardTheme}>
       <CSSReset />
       <NextSeo
+        title="Animated Credit Card Component"
+        description="PoC from app using NextJS and ChakraUI"
+        canonical="https://www.canonical.ie/"
         openGraph={{
           title: 'Animated Credit Card Component',
           description: 'PoC from app using NextJS and ChakraUI',
