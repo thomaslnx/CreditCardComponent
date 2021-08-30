@@ -8,26 +8,31 @@ import creditCardTheme from '../styles'
 function MyApp({ Component, pageProps }: AppProps): ReactElement {
 
   return (
-   <ChakraProvider theme={creditCardTheme}>
-     <CSSReset />
-     <DefaultSeo
-      openGraph={{
-        title: 'Animated Credit Card Component',
-        description: 'PoC from app using NextJS and ChakraUI',
-        type: 'website',
-        locale: 'en_IE',
-        url: 'https://credit-card-component.vercel.app/',
-        site_name: 'credit card component'
-      }}
-      twitter={{
-        handle: '@thomaslnx',
-        site: '@thomaslnx',
-        cardType: 'sumary_large_image'
-      }}
-     >
-        <Component {...pageProps} />
-     </DefaultSeo>
-   </ChakraProvider>
+    <ChakraProvider theme={creditCardTheme}>
+      <CSSReset />
+      <DefaultSeo
+        openGraph={{
+          title: 'Animated Credit Card Component',
+          description: 'PoC from app using NextJS and ChakraUI',
+          type: 'website',
+          locale: 'en_IE',
+          url: 'https://credit-card-component.vercel.app/',
+          site_name: 'credit card component',
+          images: [{
+            url: '/bankImages/nubank.svg',
+            width: 79,
+            height: 79,
+            alt: 'nubank logo'
+          }]
+        }}
+        twitter={{
+          handle: '@thomaslnx',
+          site: '@thomaslnx',
+          cardType: 'sumary_large_image'
+        }}
+      />
+      <Component {...pageProps} />
+    </ChakraProvider>
   )
 }
 
