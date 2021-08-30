@@ -19,7 +19,7 @@ function MyApp({ Component, pageProps }: AppProps): ReactElement {
           description: 'PoC from app using NextJS and ChakraUI',
           type: 'website',
           locale: 'en_IE',
-          url: 'https://credit-card-component.vercel.app/',
+          url: 'https://creditcardcomponent.vercel.app/',
           site_name: 'credit card component',
           images: [{
             url: '/bankImages/nubank.svg',
