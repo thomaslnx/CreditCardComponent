@@ -6,6 +6,7 @@ import { BankLogo } from './BankLogo'
 import { CardChip } from './CardChip'
 import { CardBrand } from './CardBrand'
 import { CardBack } from './CardBack'
+import { CardTitular } from './CardTitular'
 
 const creditCardTheme = extendTheme({
   components: {
@@ -14,7 +15,8 @@ const creditCardTheme = extendTheme({
     BankLogo,
     CardChip,
     CardBrand,
-    CardBack
+    CardBack,
+    CardTitular
   },
 })
 

@@ -1,6 +1,6 @@
 import React, { ChangeEvent, useState } from 'react'
 import type { NextPage } from 'next'
-import { Text, Button, Input } from '@chakra-ui/react'
+import { Text, Button } from '@chakra-ui/react'
 
 import { CreditCardContainer } from '@src/components/CreditCardContainer'
 import { CardFrontContainer } from '@src/components/CardFrontContainer'
@@ -9,6 +9,7 @@ import { CardChipContainer } from '@src/components/CardChipContainer'
 import { CardBrandContainer } from '@src/components/CardBrandContainer'
 import { CardBackContainer } from '@src/components/CardBackContainer'
 import { NFCLogoContainer } from '@src/components/NFCLogoContainer'
+import { CardTitularContainer } from '@src/components/CardTitularContainer'
 
 const CreditCard: NextPage = () => {
   const [isFrontFlipped, setIsFrontFlipped] = useState('notFlipped')
@@ -57,18 +58,17 @@ const CreditCard: NextPage = () => {
         pos="absolute"
         onClick={handleFlip}
         transform="translate(20vw, 48vh)"
+        variant="outline"
       >
         Flip the Card
       </Button>
-      <Input
-        value={titular}
-        onChange={handleTitular}
-        placeholder="Titular"
-        variant="unstyled"
+      <CardTitularContainer 
         display={titularInputDisplay}
-        width="300px"
-        position="absolute"
-        transform="translate(calc(50% - 150px), 70vh)"/>
+        onChange={handleTitular}
+        value={titular}
+        placeholder="Titular"
+      />
+     
     </CreditCardContainer>
   )
 }
