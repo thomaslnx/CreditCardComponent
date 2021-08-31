@@ -10,22 +10,26 @@ import { CardBrandContainer } from '@src/components/CardBrandContainer'
 import { CardBackContainer } from '@src/components/CardBackContainer'
 import { NFCLogoContainer } from '@src/components/NFCLogoContainer'
 import { CardTitularContainer } from '@src/components/CardTitularContainer'
+import { CardNumberContainer } from '@src/components/CardNumberContainer'
 
 const CreditCard: NextPage = () => {
   const [isFrontFlipped, setIsFrontFlipped] = useState('notFlipped')
   const [isBackFlipped, setIsBackFlipped] = useState('notFlipped')
   const [titular, setTitular] = useState('');
   const [titularInputDisplay, setTitularInputDisplay] = useState('inline')
+  const [cardBackVisibility, setCardBackVisibility] = useState<'none' | 'inline'>('none')
 
   function handleFlip() {
     if (isFrontFlipped === 'notFlipped') {
       setIsFrontFlipped('flipped')
       setIsBackFlipped('flipped')
       setTitularInputDisplay('none')
+      setCardBackVisibility('inline')
     } else {
       setIsFrontFlipped('notFlipped')
       setIsBackFlipped('notFlipped')
       setTitularInputDisplay('inline')
+      setCardBackVisibility('none')
     }
   }
 
@@ -68,6 +72,8 @@ const CreditCard: NextPage = () => {
         value={titular}
         placeholder="Titular"
       />
+
+      <CardNumberContainer display={cardBackVisibility}/>
      
     </CreditCardContainer>
   )
