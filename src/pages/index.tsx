@@ -1,6 +1,6 @@
-import { useState } from 'react'
+import React, { ChangeEvent, useState } from 'react'
 import type { NextPage } from 'next'
-import { Text, Button, Img, Box } from '@chakra-ui/react'
+import { Text, Button, Input } from '@chakra-ui/react'
 
 import { CreditCardContainer } from '@src/components/CreditCardContainer'
 import { CardFrontContainer } from '@src/components/CardFrontContainer'
@@ -13,16 +13,22 @@ import { NFCLogoContainer } from '@src/components/NFCLogoContainer'
 const CreditCard: NextPage = () => {
   const [isFrontFlipped, setIsFrontFlipped] = useState('notFlipped')
   const [isBackFlipped, setIsBackFlipped] = useState('notFlipped')
+  const [titular, setTitular] = useState('');
+  const [titularInputDisplay, setTitularInputDisplay] = useState('inline')
 
   function handleFlip() {
     if (isFrontFlipped === 'notFlipped') {
       setIsFrontFlipped('flipped')
       setIsBackFlipped('flipped')
+      setTitularInputDisplay('none')
     } else {
       setIsFrontFlipped('notFlipped')
       setIsBackFlipped('notFlipped')
+      setTitularInputDisplay('inline')
     }
   }
+
+  const handleTitular = (event: ChangeEvent<HTMLInputElement>) => setTitular(event.target.value)
 
   return (
     <CreditCardContainer size="xl" centerContent >
@@ -35,13 +41,13 @@ const CreditCard: NextPage = () => {
           fontSize="11px"  
           color="white"
           fontWeight="bold"
-          transform="rotate(270deg)"
+          // transform="rotate(270deg)"
           transformOrigin="center"
           position="absolute"
-          top="130px"
-          left="170px"
+          top="170px"
+          left="100px"
         >
-          Marcos M Silva
+          {titular === '' ? 'Marcos M Silva' : titular}
         </Text>
         <CardBrandContainer />
       </CardFrontContainer>
@@ -54,8 +60,16 @@ const CreditCard: NextPage = () => {
       >
         Flip the Card
       </Button>
+      <Input
+        value={titular}
+        onChange={handleTitular}
+        placeholder="Titular"
+        variant="unstyled"
+        display={titularInputDisplay}
+        width="300px"
+        position="absolute"
+        transform="translate(calc(50% - 150px), 70vh)"/>
     </CreditCardContainer>
-
   )
 }
 

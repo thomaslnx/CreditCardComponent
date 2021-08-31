@@ -14,7 +14,6 @@ function MyApp({ Component, pageProps }: AppProps): ReactElement {
         title="Animated Credit Card Component"
         description="PoC from app using NextJS and ChakraUI"
         canonical="https://creditcardcomponent.netlify.app/"
-        // canonical="https://creditcardcomponent.vercel.app/"
         openGraph={{
           title: 'Animated Credit Card Component',
           description: 'PoC from app using NextJS and ChakraUI',
