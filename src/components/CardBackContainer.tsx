@@ -31,6 +31,7 @@ export function CardBackContainer(props: CardBackContainerProps) {
           <Text 
             fontFamily="Cardium A, sans-serif" 
             letterSpacing="-0.30px" 
+            width="65px"
             marginLeft="5px"
             fontSize="14px"
             fontWeight="700"
