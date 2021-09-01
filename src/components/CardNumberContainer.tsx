@@ -22,7 +22,6 @@ export function CardNumberContainer(props: CardNumberContainerProps) {
       >
         <Input textAlign="center"
           border="1px solid #ccc"
-          value=""
           borderRadius="4px"
           padding="0"
           margin="0"

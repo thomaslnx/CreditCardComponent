@@ -1,5 +1,6 @@
 import React, { ChangeEvent, useState } from 'react'
 import type { NextPage } from 'next'
+import Head from 'next/head'
 import { Text, Button } from '@chakra-ui/react'
 
 import { CreditCardContainer } from '@src/components/CreditCardContainer'
@@ -36,6 +37,15 @@ const CreditCard: NextPage = () => {
   const handleTitular = (event: ChangeEvent<HTMLInputElement>) => setTitular(event.target.value)
 
   return (
+    <>
+    <Head>
+      <title>Animated Credit Card Component with NextJS and ChakraUI</title>
+      <meta name="viewport" content="initial-scale=1.0, width=device-width" key="viewport"/>
+      <meta name="description" content="Component to show a crdit card checkout animation"/>
+      <meta name="author" content="Marcos Moura Silva"/>
+      <meta name="keywords" content="nextjs, chakra-ui, component, credit-card, animated checkout" />
+      <meta name="robots" content="index, follow"/>
+    </Head>
     <CreditCardContainer size="xl" centerContent >
       <CardFrontContainer variant={isFrontFlipped}>
         <BankLogoContainer />
@@ -81,6 +91,7 @@ const CreditCard: NextPage = () => {
       <CardNumberContainer display={cardBackVisibility}/>
      
     </CreditCardContainer>
+    </>
   )
 }
 
