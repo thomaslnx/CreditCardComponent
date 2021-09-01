@@ -17,6 +17,7 @@ export function CardTitularContainer(props: CardTitularContainerProps) {
       <Input 
         value={value}
         onChange={onChange}
+        maxLength={26}
         placeholder={placeholder}
         variant="unstyled"
         _placeholder={{ 

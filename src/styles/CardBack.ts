@@ -4,8 +4,10 @@ export const CardBack = {
     backgroundColor: "#993399",
     color: "#261342",
     fontSize: 34,
-    width: {lg: "350px", sm: "350px"},
-    // width: "350px",
+    width: {
+      lg: "350px", 
+      sm: "350px"
+    },
     height: "222px",
     left: "50%",
     top: "50%",
