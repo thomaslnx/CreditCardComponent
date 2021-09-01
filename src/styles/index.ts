@@ -1,4 +1,5 @@
 import { extendTheme } from "@chakra-ui/react";
+import { createBreakpoints } from '@chakra-ui/theme-tools'
 
 import { CardFront } from './CardFront'
 import { Container } from './Container'
@@ -8,6 +9,13 @@ import { CardBrand } from './CardBrand'
 import { CardBack } from './CardBack'
 import { CardTitular } from './CardTitular'
 import { CardNumber } from './CardNumber'
+
+const breakpoints = createBreakpoints({
+  sm: "375px",
+  md: "768px",
+  lg: "1080px",
+  xl: "null"
+})
 
 const creditCardTheme = extendTheme({
   components: {
@@ -20,6 +28,7 @@ const creditCardTheme = extendTheme({
     CardTitular,
     CardNumber
   },
+  breakpoints
 })
 
 export default creditCardTheme;

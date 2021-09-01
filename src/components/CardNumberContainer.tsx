@@ -12,7 +12,11 @@ export function CardNumberContainer(props: CardNumberContainerProps) {
       <HStack 
         spacing="20px"
         position="absolute"
-        top="calc(50% + 150px)"
+        top={{
+          sm: "calc(50% + 220px)",
+          md: "calc(50% + 220px)",
+          lg: "calc(50% + 150px)",
+        }}
         display={display}
         fontFamily="Cardium A, sans-serif"
       >
@@ -78,7 +82,10 @@ export function CardNumberContainer(props: CardNumberContainerProps) {
       <HStack 
         spacing="10px"
         position="absolute"
-        top="calc(50% + 190px)"
+        top={{
+          sm: "calc(50% + 260px)",
+          lg: "calc(50% + 190px)",
+        }}
         left="calc(50% - 130px)"
         display={display}
       >
@@ -106,7 +113,10 @@ export function CardNumberContainer(props: CardNumberContainerProps) {
       <HStack 
         spacing="10px"
         position="absolute"
-        top="calc(50% + 190px)"
+        top={{
+          sm: "calc(50% + 260px)",
+          lg: "calc(50% + 190px)",
+        }}
         display={display}
       >
         <Input 
@@ -132,7 +142,11 @@ export function CardNumberContainer(props: CardNumberContainerProps) {
       </HStack>
       <HStack
         position="absolute"
-        top="calc(50% + 190px)"
+        top={{
+          sm: "calc(50% + 260px)",
+          md: "calc(50% + 260px)",
+          lg: "calc(50% + 190px)"
+        }}
         left="calc(50% + 80px)"
         display={display}
       >

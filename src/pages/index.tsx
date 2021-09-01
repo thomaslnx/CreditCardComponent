@@ -61,7 +61,12 @@ const CreditCard: NextPage = () => {
       <Button 
         pos="absolute"
         onClick={handleFlip}
-        transform="translate(20vw, 48vh)"
+        // transform="translate(20vw, 48vh)"
+        transform={{
+          lg: "translate(20vw, 48vh)",
+          sm: "translate(0, 73vh)",
+          md: "translate(0, 65vh)"
+        }}
         variant="outline"
       >
         Flip the Card
