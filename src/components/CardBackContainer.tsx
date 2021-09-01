@@ -22,7 +22,7 @@ export function CardBackContainer(props: CardBackContainerProps) {
           marginTop="5px"
         />
         <Box 
-          width="70px" 
+          width="75px" 
           fontSize="12px" 
           color="#ffffff" 
           marginTop="10px"
@@ -31,7 +31,8 @@ export function CardBackContainer(props: CardBackContainerProps) {
           <Text 
             fontFamily="Cardium A, sans-serif" 
             letterSpacing="-0.30px" 
-            width="65px"
+            width="70px"
+            boxSizing="border-box"
             marginLeft="5px"
             fontSize="14px"
             fontWeight="700"
